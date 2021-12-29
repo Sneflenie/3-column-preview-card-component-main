@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* ### Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    color: var(--transparent-white);
+    padding: 30px;
+    background-color: --very-light-gray;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.container {
+    margin: 50px 0;
+}
+
+.container .card {
+    padding: 60px;
+    align-items: left;
+    justify-content: left;
+}
+
+.container h1 {
+    color: var(--very-light-gray);
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 30px;
+}
+
+.container p {
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--transparent-white);
+    opacity: .8;
+}
+
+.container .card-1 {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.container .card-2 {
+    background-color: var(--dark-cyan);
+}
+
+.container .card-3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+button {
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 10px 30px;
+    border: 2px solid var(--very-light-gray);
+    border-radius: 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.btn-1 {
+    color: var(--bright-orange);
+}
+
+.btn-2 {
+    color: var(--dark-cyan);
+}
+
+.btn-2 {
+    color: var(--very-dark-cyan);
+}
+
+
+/* Attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%)
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        margin: 100px 200px;
+    }
+    .container p {
+        margin-bottom: 80px;
+    }
+    .container .card-1 {
+        background-color: var(--bright-orange);
+        border-radius: 10px 0 0 10px;
+    }
+    .container .card-2 {
+        background-color: var(--dark-cyan);
+    }
+    .container .card-3 {
+        background-color: var(--very-dark-cyan);
+        border-radius: 0 10px 10px 0;
+    }
+}
